@@ -1,0 +1,239 @@
+/*
+filename: Huynh Trong Hieu
+author: Huynh Trong Hieu
+created: 17/2/2025
+last modified: 19/2/2025
+description: used for index.html, jobs.html, apply.html, about.html, enhancements.html
+*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #598392;
+    color: #01161e;
+    text-align: center;
+    font-size: 110%;
+}
+header {
+    background-color: #124559;
+    font-family: "Limelight", arial;
+    color: #eff6e0; 
+    background-position: bottom;
+    width: 100%;
+    animation: fade-down 1s;
+}
+article {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/* NAVIGATION MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    background-color: #598392;
+    font-weight: bold;
+    padding: 0.625em 3.5em;
+    text-decoration: none;
+    color: #000;
+    border-right: 1px solid #bababa;
+    border-bottom: 1px solid #124559;
+}
+nav ul li a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
+/* INDEX + JOBS + FORMS */
+main {
+    padding: 50px;
+    animation: fade-up 0.5s;
+}
+#purpose {
+    border: 2px solid #080e10;
+    height: 500px;
+    color: #eff6e0;
+    background-color: #113543 ;
+    background-image: url(images/citybg.png);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+    font-size: 30px;
+}
+.testimonial-container {
+    border: 2px solid #124559;
+    background-color: #eff6e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    text-align: left;
+    box-shadow: 10px 10px 5px #335c67;
+}
+.testimonial-container::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+.testimonial-container img {
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    transition: .5s;
+}
+.testimonial-container span {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+}
+@media (max-width: 500px) {
+    .testimonial-container {
+        text-align: center;
+    }
+    .testimonial-container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
+.jobs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.jobs, form {
+    flex: 1 1 calc(33.33% - 2em);
+    text-align: justify;
+    margin: 0;
+    box-sizing: border-box;
+    color: #124559;
+    border: 1px solid #124559;
+    background-color: #eff6e0;
+    background-image: url(images/lined\ note\ overlay.png);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #335c67;
+}
+.jobs img {
+    border: 1px solid #124559;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: .5s;
+}
+.jobs img:hover, #apply:hover, .testimonial-container img:hover {
+    transform: scale(1.1);
+}
+aside {
+    float: right;
+    size: 25%;
+    border: 2px solid #124559;
+    background-color: #eff6e0;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 8px;
+    transition: .5s;
+}
+aside:hover {
+    opacity: .5;
+}
+
+#apply {
+    margin-top: auto;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    transition: .5s;
+}
+fieldset {
+    border: 1px solid #01161e;
+}
+textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+button {
+    background-color: #124559;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+#info, #enhancements {
+    border: 2px solid #124559;
+    background-color: #eff6e0;
+    border-radius: 8px;
+}
+#info img {
+    width: auto;
+    height: 300px;
+    border-radius: 50%;
+}
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+dt, dd {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+dt {
+    font-weight: bold;
+    margin-right: 10px;
+}
+dd {
+    margin: 0;
+}
+#enhancements dd {
+    text-align: left;
+}
+table, th, td {
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #124559;
+}
+/* KEYFRAMES */
+@keyframes fade-up {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+@keyframes fade-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+/* FOOTER */
+footer {
+    clear: both;
+    border-top: 4px double;
+}
+footer p:first-child {float:left;}
+footer p:last-child {float: right; text-align: right;}
+
+
