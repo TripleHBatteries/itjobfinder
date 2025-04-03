@@ -69,8 +69,6 @@
         <p><span>K.S.G.</span></p>
         <p>Can I use this for uh... Red Carpet?</p>
     </div>
-
-    <h1> <a href="https://youtu.be/yjUmLTeWKo0">Website Showcase Video</a></h1>
 </main>
 
 <?php
